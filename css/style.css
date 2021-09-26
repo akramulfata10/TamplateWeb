@@ -35,6 +35,7 @@ section {
   min-height: 100vh;
   padding: 0 9%;
   padding-top: 7.5rem;
+  transition: 0.3s;
 }
 
 header {
@@ -67,6 +68,7 @@ header .navbar a {
   margin-left: 10px;
   color: var(--purple);
   text-transform: capitalize;
+  transition: 0.3s linear;
 }
 
 header .navbar a:hover {
@@ -114,10 +116,10 @@ header label {
 
 .home .image img {
   width: 40vw;
-  animation: float 3s linear infinite;
+  animation: munir 3s linear infinite;
 }
 
-@keyframes float {
+@keyframes munir {
   0%,
   100% {
     transform: translateY(0rem);
@@ -142,6 +144,59 @@ header label {
   color: #999;
   padding: 1rem 0;
 }
+
+.heading {
+  text-align: center;
+  background: var(--gradient);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.about .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 50px auto;
+}
+
+.about .box-container .box {
+  flex: 1 1 30rem;
+  background: var(--gradient);
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
+  margin: 1.5rem;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  text-indent: 4rem;
+  color: white;
+  text-transform: capitalize;
+  font-size: 2rem;
+  animation: fata 3s linear infinite;
+}
+
+@keyframes fata {
+  0%,
+  40% {
+    transform: rotateX(1);
+  }
+  50% {
+    transform: translateY(-4rem);
+  }
+  75% {
+    transform: translateY(2);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+
 /* media query */
 
 @media (max-width: 1200px) {
@@ -174,7 +229,7 @@ header label {
     transform-origin: top;
     transform: scaleY(0);
     opacity: 0;
-    transition: 0.1s linear;
+    transition: 0.3s linear;
   }
 
   header .navbar a {
