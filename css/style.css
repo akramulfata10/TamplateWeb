@@ -192,7 +192,7 @@ header label {
     transform: translateY(2);
   }
   100% {
-    transform: rotateX(0);
+    transform: translateY(0);
   }
 }
 
