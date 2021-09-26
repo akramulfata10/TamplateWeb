@@ -259,6 +259,9 @@ header label {
   .home .content p {
     font-size: 1.5rem;
   }
+  .about .box-container .box {
+    flex-wrap: column-reverse;
+  }
 }
 
 @media (max-width: 450px) {
